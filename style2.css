@@ -7,7 +7,8 @@
     "sidebar top"
     "sidebar top"
     "sidebar main"
-    "sidebar main"
+    "sidebar main";
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .sidebar{
@@ -24,12 +25,30 @@
 }
 
 .flex-main {
-justify-content: space-between;
-display: grid;
+background-color: lightblue;
 }
 
 .nav-bar {
     display: flex;
     justify-content:space-between;
     align-items: center;
+}
+
+.leo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dash right"
+    "dash right"
+    "dash right";
+}
+
+.dash{
+grid-area: dash;
+}
+
+.right{
+grid-area: right;
 }
